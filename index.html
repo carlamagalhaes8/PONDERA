@@ -16,9 +16,69 @@
         <h2>Calculadora de média ENEM</h2>
     </header>
 
-    <body>
-        <h1>separa</h1>
-    </body>
+    <main>
+        <div id="content">
+            <div id="text">
+                <h3>Calculadora de média ponderada</h3>
+                <p>Cada universidade define e divulga os pesos de cada área do ENEM para seus cursos, o que significa que algumas instituições podem valorizar mais determinadas competências. O cálculo da nota final é feito por meio de uma média ponderada. <br>
+                Preencha abaixo suas notas e os pesos correspondentes de cada área do ENEM para obter sua média final.</p>
+            </div>
+            <div id="calculator">
+                <div id="notes">
+
+                    <div id="background-notes">
+
+                        <div id="column-one">
+                            <h5>LINGUAGENS:</h5>
+                            <input type="number" id="linguagens" placeholder="Digite sua nota em Linguagens">
+
+                            <h5>HUMANAS:</h5>
+                            <input type="number" id="humanas" placeholder="Digite sua nota em Humanas">
+
+                            <h5>NATUREZAS:</h5>
+                            <input type="number" id="naturezas" placeholder="Digite sua nota em Naturezas">
+
+                            <h5>MATEMÁTICA:</h5>
+                            <input type="number" id="matematica" placeholder="Digite sua nota em Matemática">
+
+                            <h5>REDAÇÃO:</h5>
+                            <input type="number" id="redacao" placeholder="Digite sua nota em Redação">
+
+                            <input type="button" id="calculate" value="Calcular">
+                        </div>
+
+                        <div id="column-two">
+                            <h5>PESO:</h5>
+                            <input type="number" id="peso-linguagens" placeholder="Digite o peso de Linguagens">
+
+                            <h5>PESO:</h5>
+                            <input type="number" id="peso-humanas" placeholder="Digite o peso de Humanas">
+
+                            <h5>PESO:</h5>
+                            <input type="number" id="peso-naturezas" placeholder="Digite o peso de Naturezas">
+
+                            <h5>PESO:</h5>
+                            <input type="number" id="peso-matematica" placeholder="Digite o peso de Matemática">
+
+                            <h5>PESO:</h5>
+                            <input type="number" id="peso-redacao" placeholder="Digite o peso de Redação">
+
+                            <input type="button" id="clear" value="Limpar">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="result">
+                    <h4>Sua média final é:</h4>
+                    <h3 id="final-note">1000.00</h3>
+                </div>
+            </div>
+        </div>
+        <div id="background-ads">
+            <div id="ads">Adicione seu anúncio aqui</div>
+        </div>
+    </main>
 
     <footer>
         <div id="suport">

@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
 header {
     background-color: #123458;
     display: flex;
@@ -10,6 +15,7 @@ header {
     align-items: center;    
     justify-content: center; 
     padding: 1.125em; /* 18px */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
 header img {
@@ -20,7 +26,6 @@ header h2 {
     color: white;
     text-align: center;
     font-size: 1.125em; /* 18px */
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
 
@@ -29,8 +34,175 @@ header h2 {
 
 
 
+
+
+
+main{
+ display: flex;
+ width: 100%;
+
+ padding: 80px 6.5%; /* 130px 100px */
+ gap: 5%;
+}
+
+main #background-ads{
+ background-color: #D8D5D1;
+ width: 22%;
+
+}
+
+main #content{
+    background-color: white;
+    width: 60%;
+}
+
+#content #text h3{
+ font-size: 1.125em;
+ padding-bottom: 1em;
+}
+
+#content #text p{
+   font-size: 1em; 
+   text-align: justify;
+
+   padding-bottom: 2.5em;
+}
+
+#calculator{
+    display: flex;
+    width: 100%;
+
+    gap: 2%;
+}
+
+#calculator #notes{
+    background-color: #F1EFEC;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+
+    width: 59%;
+}
+
+#notes #background-notes{
+    padding: 1.875em;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#background-notes #column-one{
+    width: 47.5%;
+}
+
+#background-notes #column-two{
+    width: 47.5%;
+}
+
+#background-notes #column-one h5{
+    padding-bottom: 0.25em;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+#background-notes #column-one input{
+    width: 100%;
+    background-color: #F1EFEC;
+    border-color: #D8D5D1;
+    border-radius: 0.5em;
+    background-color: #F1EFEC;
+    margin-bottom: 1.5em;
+    height: 2em;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+#background-notes #column-two h5{
+    padding-bottom: 0.25em;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+#background-notes #column-two input{
+    width: 100%;
+    background-color: #F1EFEC;
+    border-color: #D8D5D1;
+    border-radius: 0.5em;
+    background-color: #F1EFEC;
+    margin-bottom: 1.5em;
+    height: 2em;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+#background-notes #column-two #clear{
+    background-color: #FF963A;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+#background-notes #column-one #calculate{
+    background-color: #FF963A;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+#background-notes #column-two #clear:hover{
+    background-color: #ff6356;
+}
+
+#background-notes #column-one #calculate:hover{
+    background-color: #ff6356;
+}
+
+
+
+
+
+#calculator #result{
+    background-color: #3fa2ff;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    width: 39%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator #result h4{
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+}
+
+#calculator #result h3{
+    font-size: 2.5em;
+    color: white;
+}
+
+
+
+
+
 footer {
     background-color: #123458;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
 
     display: flex;
     justify-content: space-between;
@@ -48,14 +220,12 @@ footer #suport {
 footer #suport h6 {
     color: white;
     font-size: 0.875em; /* 14px */
-    font-family: "Roboto", sans-serif;
 }
 
 footer #suport a {
     color: white;
     text-decoration: none;
     font-size: 0.75em; /* 12px */
-    font-family: "Roboto", sans-serif;
 }
 
 footer #suport a:hover {
@@ -77,6 +247,5 @@ footer #developer #developer-icons {
 footer #developer h6 {
     color: white;
     font-size: 0.75em;; /* 12px */
-    font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
