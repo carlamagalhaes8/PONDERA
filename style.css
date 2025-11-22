@@ -83,7 +83,7 @@ main #content{
     width: 59%;
 }
 
-#notes #background-notes{
+#notes #background-notes #reset-form{
     padding: 1.875em;
 
     display: flex;
@@ -91,21 +91,21 @@ main #content{
     gap: 5%;
 }
 
-#background-notes #column-one{
+#reset-form #column-one{
     width: 47.5%;
 }
 
-#background-notes #column-two{
+#reset-form #column-two{
     width: 47.5%;
 }
 
-#background-notes #column-one h5{
+#reset-form #column-one h5{
     padding-bottom: 0.25em;
     font-size: 0.875em;
     font-weight: 600;
 }
 
-#background-notes #column-one input{
+#reset-form #column-one input{
     width: 100%;
     background-color: #F1EFEC;
     border-color: #D8D5D1;
@@ -116,13 +116,13 @@ main #content{
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
-#background-notes #column-two h5{
+#reset-form #column-two h5{
     padding-bottom: 0.25em;
     font-size: 0.875em;
     font-weight: 600;
 }
 
-#background-notes #column-two input{
+#reset-form #column-two input{
     width: 100%;
     background-color: #F1EFEC;
     border-color: #D8D5D1;
@@ -135,7 +135,7 @@ main #content{
 
 
 
-#background-notes #column-two #clear{
+#reset-form #column-two #clear{
     background-color: #FF963A;
     border: none;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
@@ -148,7 +148,7 @@ main #content{
     font-weight: 600;
 }
 
-#background-notes #column-one #calculate{
+#reset-form #column-one #calculate{
     background-color: #FF963A;
     border: none;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
@@ -161,11 +161,11 @@ main #content{
     font-weight: 600;
 }
 
-#background-notes #column-two #clear:hover{
+#reset-form #column-two #clear:hover{
     background-color: #ff6356;
 }
 
-#background-notes #column-one #calculate:hover{
+#reset-form #column-one #calculate:hover{
     background-color: #ff6356;
 }
 

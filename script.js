@@ -36,16 +36,10 @@ function calcular() {
         peso_redacao
     );
 
-    document.getElementById("final-note").innerHTML = media_final.toFixed(2);
+    resultado = media_final.toFixed(2);
+    document.getElementById("final-note").innerHTML = resultado.replace(".", ",");
 }
 
-function clear() {
-
-    // limpa inputs que o usuário preencheu
-    document.querySelectorAll("input").forEach(input => {
-        input.value = "";
-    });
-
-    // limpa o resultado
-    document.getElementById("final-note").innerHTML = "";
-}
+ function clearForm(){
+    document.getElementById("final-note").innerHTML = "0000,00";
+ }
