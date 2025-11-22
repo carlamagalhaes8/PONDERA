@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,40 +30,40 @@
 
                         <div id="column-one">
                             <h5>LINGUAGENS:</h5>
-                            <input type="number" id="linguagens" placeholder="Digite sua nota em Linguagens">
+                            <input type="text" oninput="this.value = this.value.replace(/[^0-9,]/g, '');" id="linguagens" placeholder="Digite sua nota em Linguagens">
 
                             <h5>HUMANAS:</h5>
-                            <input type="number" id="humanas" placeholder="Digite sua nota em Humanas">
+                            <input type="text" oninput="this.value = this.value.replace(/[^0-9,]/g, '');" id="humanas" placeholder="Digite sua nota em Humanas">
 
                             <h5>NATUREZAS:</h5>
-                            <input type="number" id="naturezas" placeholder="Digite sua nota em Naturezas">
+                            <input type="text" oninput="this.value = this.value.replace(/[^0-9,]/g, '');" id="naturezas" placeholder="Digite sua nota em Naturezas">
 
                             <h5>MATEMÁTICA:</h5>
-                            <input type="number" id="matematica" placeholder="Digite sua nota em Matemática">
+                            <input type="text" oninput="this.value = this.value.replace(/[^0-9,]/g, '');" id="matematica" placeholder="Digite sua nota em Matemática">
 
                             <h5>REDAÇÃO:</h5>
-                            <input type="number" id="redacao" placeholder="Digite sua nota em Redação">
+                            <input type="text" oninput="this.value = this.value.replace(/[^0-9,]/g, '');" id="redacao" placeholder="Digite sua nota em Redação">
 
-                            <input type="button" id="calculate" value="Calcular">
+                            <button id="calculate" onclick="calcular()">Calcular</button>
                         </div>
 
                         <div id="column-two">
                             <h5>PESO:</h5>
-                            <input type="number" id="peso-linguagens" placeholder="Digite o peso de Linguagens">
+                            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="peso-linguagens" placeholder="Digite o peso de Linguagens">
 
                             <h5>PESO:</h5>
-                            <input type="number" id="peso-humanas" placeholder="Digite o peso de Humanas">
+                            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="peso-humanas" placeholder="Digite o peso de Humanas">
 
                             <h5>PESO:</h5>
-                            <input type="number" id="peso-naturezas" placeholder="Digite o peso de Naturezas">
+                            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="peso-naturezas" placeholder="Digite o peso de Naturezas">
 
                             <h5>PESO:</h5>
-                            <input type="number" id="peso-matematica" placeholder="Digite o peso de Matemática">
+                            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="peso-matematica" placeholder="Digite o peso de Matemática">
 
                             <h5>PESO:</h5>
-                            <input type="number" id="peso-redacao" placeholder="Digite o peso de Redação">
+                            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="peso-redacao" placeholder="Digite o peso de Redação">
 
-                            <input type="button" id="clear" value="Limpar">
+                            <button id="clear" onclick="clear()">Limpar</button>
                         </div>
 
                     </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div id="result">
                     <h4>Sua média final é:</h4>
-                    <h3 id="final-note">1000.00</h3>
+                    <h3 id="final-note">0000.00</h3>
                 </div>
             </div>
         </div>
