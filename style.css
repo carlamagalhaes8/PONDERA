@@ -3,9 +3,17 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body{
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
+
+    display: flex;              
+    flex-direction: column;     
+    min-height: 100vh;          
 }
 
 header {
@@ -29,26 +37,17 @@ header h2 {
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
 main{
- display: flex;
- width: 100%;
-
- padding: 80px 6.5%; /* 130px 100px */
- gap: 5%;
+    display: flex;
+    width: 100%;
+    padding: 80px 6.5%; 
+    gap: 5%;
+    flex: 1;            
 }
 
 main #background-ads{
- background-color: #D8D5D1;
- width: 22%;
-
+    background-color: #D8D5D1;
+    width: 22%;
 }
 
 main #content{
@@ -57,21 +56,19 @@ main #content{
 }
 
 #content #text h3{
- font-size: 1.125em;
- padding-bottom: 1em;
+    font-size: 1.125em;
+    padding-bottom: 1em;
 }
 
 #content #text p{
-   font-size: 1em; 
-   text-align: justify;
-
-   padding-bottom: 2.5em;
+    font-size: 1em; 
+    text-align: justify;
+    padding-bottom: 2.5em;
 }
 
 #calculator{
     display: flex;
     width: 100%;
-
     gap: 2%;
 }
 
@@ -79,13 +76,11 @@ main #content{
     background-color: #F1EFEC;
     border-radius: 0.5em;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-
     width: 59%;
 }
 
 #notes #background-notes #reset-form{
     padding: 1.875em;
-
     display: flex;
     flex-direction: row;
     gap: 5%;
@@ -110,7 +105,6 @@ main #content{
     background-color: #F1EFEC;
     border-color: #D8D5D1;
     border-radius: 0.5em;
-    background-color: #F1EFEC;
     margin-bottom: 1.5em;
     height: 2em;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
@@ -127,13 +121,10 @@ main #content{
     background-color: #F1EFEC;
     border-color: #D8D5D1;
     border-radius: 0.5em;
-    background-color: #F1EFEC;
     margin-bottom: 1.5em;
     height: 2em;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
-
-
 
 #reset-form #column-two #clear{
     background-color: #FF963A;
@@ -169,16 +160,11 @@ main #content{
     background-color: #ff6356;
 }
 
-
-
-
-
 #calculator #result{
     background-color: #3fa2ff;
     border-radius: 0.5em;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
     width: 39%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,36 +182,35 @@ main #content{
     color: white;
 }
 
-
-
-
-
 footer {
     background-color: #123458;
     box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
-
+    
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    padding: 1.125em 28.125em; /* 18px 450px */
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1.125em 0;
+    width: 100%;
 }
+
 
 footer #suport {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25em; /* 4px */
+    gap: 0.25em;
 }
 
 footer #suport h6 {
     color: white;
-    font-size: 0.875em; /* 14px */
+    font-size: 0.875em;
 }
 
 footer #suport a {
     color: white;
     text-decoration: none;
-    font-size: 0.75em; /* 12px */
+    font-size: 0.75em;
 }
 
 footer #suport a:hover {
@@ -236,16 +221,16 @@ footer #developer {
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
-    gap: 0.25em; /* 4px */
+    gap: 0.25em;
 }
 
 footer #developer #developer-icons {
     display: flex;
-    gap: 0.75em; /* 12px */
+    gap: 0.75em;
 }
 
 footer #developer h6 {
     color: white;
-    font-size: 0.75em;; /* 12px */
+    font-size: 0.75em;
     font-weight: bold;
 }
