@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pondera - Calculadora de média ENEM</title>
+    <link rel="icon" type="image/png" href="Assets/calcular.png">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,42 +35,41 @@
                             <div id="column-one">
                                 <h5>LINGUAGENS:</h5>
                                 <input type="text" maxlength="5" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="linguagens" placeholder="Digite sua nota em Linguagens">
+                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="linguagens" placeholder="Digite sua nota">
 
                                 <h5>HUMANAS:</h5>
                                 <input type="text" maxlength="5" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="humanas" placeholder="Digite sua nota em Humanas">
+                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="humanas" placeholder="Digite sua nota">
 
                                 <h5>NATUREZAS:</h5>
                                 <input type="text" maxlength="5" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="naturezas" placeholder="Digite sua nota em Naturezas">
+                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="naturezas" placeholder="Digite sua nota">
 
                                 <h5>MATEMÁTICA:</h5>
                                 <input type="text" maxlength="5" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="matematica" placeholder="Digite sua nota em Matemática">
+                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="matematica" placeholder="Digite sua nota">
 
                                 <h5>REDAÇÃO:</h5>
                                 <input type="text" maxlength="5" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="redacao" placeholder="Digite sua nota em Redação">
+                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="redacao" placeholder="Digite sua nota">
 
                                 <button type="button" id="calculate" onclick="calcular()">Calcular</button>
                             </div>
 
                             <div id="column-two">
                                 <h5>PESO:</h5>
-                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-linguagens" placeholder="Digite o peso de Linguagens">
+                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-linguagens" placeholder="Digite o peso">
 
                                 <h5>PESO:</h5>
-                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-humanas" placeholder="Digite o peso de Humanas">
+                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-humanas" placeholder="Digite o peso">
+                                <h5>PESO:</h5>
+                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-naturezas" placeholder="Digite o peso">
 
                                 <h5>PESO:</h5>
-                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-naturezas" placeholder="Digite o peso de Naturezas">
+                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-matematica" placeholder="Digite o peso">
 
                                 <h5>PESO:</h5>
-                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-matematica" placeholder="Digite o peso de Matemática">
-
-                                <h5>PESO:</h5>
-                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-redacao" placeholder="Digite o peso de Redação">
+                                <input type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-5]/g, '');" id="peso-redacao" placeholder="Digite o peso">
 
                                 <input type="reset" id="clear" onclick="clearForm()" value="Limpar">
                             </div>
